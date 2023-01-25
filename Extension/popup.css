@@ -1,0 +1,63 @@
+a
+{
+    color: white;
+}
+body
+{
+    background-color: black;
+    color: white;
+    width: 300px;
+}
+#extensionTitle
+{
+    margin-bottom: 3rem;
+}
+.product-card
+{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+}
+
+.product-card:hover
+{
+    transform: scale(1.02);
+}
+
+h1
+{
+    text-align: center;
+}
+.productTitle
+{
+    text-align: center;
+    font-size: 1rem;
+}
+.productPrice
+{
+    text-align: center;
+    font-size: 1rem;
+}
+.productImage
+{
+    display: flex;
+    margin: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+}
+.productLink
+{
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+

@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "ShopAssist",
+    "version": "1.1",
+    "description":"This extension helps you compare prices and find the best deals on Amazon and Flipkart while shopping online.",
+    "content_scripts": [
+        {
+            "matches": ["*://*.amazon.in/*", "*://*.flipkart.com/*"],
+            "js": ["main.js"]
+        }
+    ],
+    "host_permissions": ["https://*.deta.dev/*"],
+    "permissions": ["activeTab", "tabs","scripting"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "128": "images/icon.png"
+    }
+}

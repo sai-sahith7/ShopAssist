@@ -88,6 +88,7 @@ def flipkart(searches):
         headers = {"User-Agent": "Edge/90.0.818.46"}
         source = requests.get("https://www.flipkart.com/search?q="+search,headers=headers).text
         soup = BeautifulSoup(source,"html.parser").prettify()
+        return soup
         for i in url_list_for_flipkart(str(soup)):
             result.append(i)
     return result
@@ -110,7 +111,8 @@ def amazonroute(search: str):
 
 @app.get('/flipkart/{search}')
 def flipkartroute(search: str):
-    return get_json_repsone(flipkart([search]))
+    # return get_json_repsone(flipkart([search]))
+    return flipkart([search])
 
 if __name__ == "__main__":
     uvicorn.run(app, host="localhost", port=5000)
